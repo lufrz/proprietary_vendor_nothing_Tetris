@@ -1247,8 +1247,6 @@ PRODUCT_PACKAGES += \
     thermal_core \
     volte_clientapi_ua \
     volte_rcs_ua \
-    wmt_launcher \
-    wmt_loader \
     vtservice
 
 PRODUCT_PACKAGES += \
