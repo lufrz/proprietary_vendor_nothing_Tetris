@@ -375,6 +375,8 @@ PRODUCT_PACKAGES += \
     sensors.mediatek.V2.0 \
     sound_trigger.primary.default \
     vendor.mediatek.hardware.audio-impl \
+    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
+    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
@@ -434,6 +436,7 @@ PRODUCT_PACKAGES += \
     libawinicsmartpaparse \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
+    libbluetooth_audio_session_mediatek \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbt-vendor \
@@ -1037,10 +1040,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.apusys-V3-ndk \
     vendor.mediatek.hardware.apuware.utils@2.0_vendor \
+    vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendor \
     vendor.mediatek.hardware.camera.aovservice-V2-ndk \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.atms@1.0 \
