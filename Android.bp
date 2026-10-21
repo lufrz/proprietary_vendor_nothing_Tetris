@@ -378,6 +378,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.soundtrigger3-impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.soundtrigger3-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.soundtrigger3-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libaudio_aidl_conversion_common_ndk-v34",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "audio.primary.mediatek",
     owner: "nothing",
     strip: {
@@ -2166,6 +2199,41 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudio_aidl_conversion_common_ndk-v34",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk-v34.so",
+            ],
+            shared_libs: [
+                "android.media.audio.common.types-V2-ndk",
+                "android.hardware.audio.common-V2-ndk",
+                "libbinder",
+                "liblog",
+                "libshmemcompat",
+                "libstagefright_foundation",
+                "libutils",
+                "shared-file-region-aidl-cpp",
+                "framework-permission-aidl-cpp",
+                "libbinder_ndk",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },

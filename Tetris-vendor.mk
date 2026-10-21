@@ -355,6 +355,7 @@ PRODUCT_PACKAGES += \
     libGLES_mali \
     android.hardware.audio@7.1-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
+    android.hardware.soundtrigger3-impl \
     audio.primary.mediatek \
     fingerprint.mt6878 \
     gps.default \
@@ -415,6 +416,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_night_video \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
+    libaudio_aidl_conversion_common_ndk-v34 \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
