@@ -374,6 +374,7 @@ PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal \
     sensors.mediatek.V2.0 \
     sound_trigger.primary.default \
+    vendor.mediatek.hardware.audio-impl \
     vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \

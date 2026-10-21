@@ -1048,6 +1048,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.audio-impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.audio-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libmediautils_vendor",
+                "libmemunreachable",
+                "liblog",
+                "libutils",
+                "vendor.mediatek.hardware.audio-V1-ndk",
+                "libmedia_helper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.camera.atms_aidl@1.0-impl",
     owner: "nothing",
     strip: {
